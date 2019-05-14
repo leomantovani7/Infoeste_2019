@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Principal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="../public/css/css.css">
+        <!----<script src="main.js"></script-->
+    </head>
+    <body>
+        <header><h1>Logo</h1></header>
+        <nav>
+            <menu>
+                <ul>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="#"> Formulário</a></li>
+                    <li><a href="#"> Buscar CEP</a></li>
+                    <li><a href="#"> Sobre</a></li>
+                </ul>
+            </menu>
+        </nav>
+        <main>
+            <article id ="conteudo">
+                <section if="form">
+                    <h1>Busca CEP</h1>
+                    <hr>
+                    <form action="#">
+                        <label for="cep">CEP:(*)</label> <br>
+                        <input type="number" id="cep" name="cep">
+
+                        <label for="uf">UF:</label> <br>
+                        <input type="number" id="uf" name="uf" readonly>
+
+                        <label for="cidade">Cidade:</label> <br>
+                        <input type="number" id="cidade" name="cidade" readonly>
+
+                        <label for="bairro">Bairro:</label> <br>
+                        <input type="number" id="bairro" name="bairro" readonly>
+
+                        <label for="rua">Rua:</label> <br>
+                        <input type="number" id="rua" name="rua" readonly>
+
+                        <label for="numero">Número:</label> <br>
+                        <input type="number" id="numero" name="numero" readonly>
+                    </form>
+                </section>
+            </article>
+        </main>
+    </body>
+</html>

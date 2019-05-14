@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hide em JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <style>
+        .estilo-div {
+            margin: 0 auto;
+            height: 15em;
+            border: 1px solid black;
+            text-align: center;
+            display: table;
+            color: white;
+        }
+
+        div#pai {
+            width: 50%;
+            height: 5em;
+            background-color: darkblue;
+        }
+        div#filha {
+            width: 50%;
+            height: 5em;
+            background-color: darkgoldenrod;
+        }
+
+        div p {
+            font-size: 2em;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="pai" class="estilo-div">  
+        <div id="filha" class="estilo-div" onclick="someDiv()"></div>
+        <p onclick="someTexto()"></p>
+    </div>
+</body>
+    <script>
+        function someDiv() {
+            document.getElementById('filha').style.visibility = 'hidden';
+            document.getElementsByTagName('p')[0].innerHTML = 'Só magia top';
+        }
+
+        function someTexto() {
+            document.getElementById('filha').style.visibility = 'visible';
+            document.getElementsByTagName('p')[0].innerHTML = '';
+        }
+    </script>
+</html>
