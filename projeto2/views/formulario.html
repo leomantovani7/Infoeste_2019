@@ -8,10 +8,18 @@
         <title>Formulário</title>
 
         <!--link o css-->
-
+        <link rel="stylesheet" type="text/css" media="screen" href="../public/css/css.css">
         <!--link o jquery-->
-       
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+        <!--MASK-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+        
         <!--link my_javascrip-->
+        <script src="../public/js/validaForm.js"></script>
     </head>
 
     <body>
@@ -23,10 +31,10 @@
             <menu>
                 <ul>
                     <!--colocar o caminho das outras páginas-->
-                    <li><a >Home</a></li>
-                    <li><a >Formulário</a></li>
-                    <li><a >Busca Cep</a></li>
-                    <li><a >Sobre</a></li>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="#"> Formulário</a></li>
+                    <li><a href="buscaCep.html"> Buscar CEP</a></li>
+                    <li><a href="sobre.html"> Sobre</a></li>
                 </ul>
             </menu>
         </nav>
@@ -61,8 +69,8 @@
                             <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br>
 
                             <!--colocar os eventos de validação de formulario-->
-                            <button type="button" class="sucesso">Cadastrar</button>
-                            <button class="cancela">Cancelar</button>
+                            <button type="button" class="sucesso" onclick="validar()">Cadastrar</button>
+                            <button type="button" class="cancela" onclick="window.location.href = 'index.html'">Cancelar</button>
                         </form>
                     </section>
 
@@ -76,8 +84,8 @@
                                 <tr>
                                     <th>Código</th>
                                     <th>Nome</th>
-                                    <th>Ação</th>
-                                    <th>Alteração</th>
+                                    <th>Deletar</th>
+                                    <th>Alterar</th>
                                 </tr>
                             </thead>
                             <tbody>
